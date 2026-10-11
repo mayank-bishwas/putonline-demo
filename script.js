@@ -1,145 +1,142 @@
 /**
- * PutOnline — Vanilla JavaScript
- * Bilingual Engine (Hindi Devanagari <-> English), Dynamic SVG Connectors, and WhatsApp Links
+ * ISellOnline — Clean Vanilla JavaScript Controller
+ * Handles Bilingual Switch (Hindi/English), Mobile Drawer, and Autoplay.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   // --- 1. Bilingual Language Switcher ---
-  // Default language is Hindi ('hi')
-  const savedLang = localStorage.getItem('putonline_lang') || 'hi';
-  applyLanguage(savedLang);
+  const langButtons = document.querySelectorAll('.lang-btn');
+  const storedLang = localStorage.getItem('isellonline_lang') || 'hi';
 
-  document.querySelectorAll('.lang-toggle-btn').forEach(btn => {
+  function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    localStorage.setItem('isellonline_lang', lang);
+
+    // Update active button state
+    langButtons.forEach(btn => {
+      const isTarget = btn.getAttribute('data-lang-target') === lang;
+      btn.classList.toggle('active', isTarget);
+      btn.setAttribute('aria-pressed', isTarget ? 'true' : 'false');
+    });
+
+    // Swap content for all bilingual elements
+    document.querySelectorAll('[data-hi][data-en]').forEach(el => {
+      const translated = el.getAttribute(`data-${lang}`);
+      if (translated) {
+        el.innerHTML = translated;
+      }
+    });
+
+    // Update WhatsApp link greeting message
+    const waText = lang === 'hi'
+      ? encodeURIComponent('नमस्ते ISellOnline, मुझे अपनी दुकान को ऑनलाइन लाना है। कृपया लाइव प्रोटोटाइप की जानकारी दें।')
+      : encodeURIComponent('Hello ISellOnline, I would like to bring my store online. Please share the live prototype details.');
+
+    document.querySelectorAll('.wa-button').forEach(btn => {
+      btn.href = `https://wa.me/918521567359?text=${waText}`;
+    });
+  }
+
+  langButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       const targetLang = btn.getAttribute('data-lang-target');
-      if (targetLang) {
-        localStorage.setItem('putonline_lang', targetLang);
-        applyLanguage(targetLang);
-      }
+      if (targetLang) setLanguage(targetLang);
     });
   });
 
-  function applyLanguage(lang) {
-    document.documentElement.lang = lang;
-
-    // Update active class on toggle buttons
-    document.querySelectorAll('.lang-toggle-btn').forEach(b => {
-      if (b.getAttribute('data-lang-target') === lang) {
-        b.classList.add('active');
-        b.setAttribute('aria-pressed', 'true');
-      } else {
-        b.classList.remove('active');
-        b.setAttribute('aria-pressed', 'false');
-      }
-    });
-
-    // Update all elements with data-hi and data-en
-    document.querySelectorAll('[data-hi][data-en]').forEach(el => {
-      const content = el.getAttribute(`data-${lang}`);
-      if (content !== null) {
-        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          el.placeholder = content;
-        } else {
-          el.innerHTML = content;
-        }
-      }
-    });
-
-    // Update WhatsApp links with language-specific greeting message
-    const waText = lang === 'hi'
-      ? encodeURIComponent('नमस्ते PutOnline, मुझे अपनी दुकान को ऑनलाइन लाना है। कृपया लाइव प्रोटोटाइप की जानकारी दें।')
-      : encodeURIComponent('Hello PutOnline, I would like to bring my store online. Please share the live prototype details.');
-
-    document.querySelectorAll('.btn-whatsapp-pill').forEach(btn => {
-      btn.href = `https://wa.me/911234567890?text=${waText}`;
-    });
+  // Initialize language on page load
+  if (storedLang !== 'hi') {
+    setLanguage(storedLang);
+  } else {
+    setLanguage('hi');
   }
 
-  // --- 2. Hero Video Autoplay Resilience ---
-  const heroVideo = document.getElementById('heroVideo');
-  if (heroVideo) {
-    heroVideo.play().catch(() => {
-      // Modern browsers allow muted autoplay
-    });
+  // --- 2. Mobile Drawer Navigation ---
+  const hamburgerBtn = document.getElementById('navHamburgerBtn');
+  const mobileDrawer = document.getElementById('mobileNavDrawer');
+
+  function toggleMobileMenu(forceState) {
+    if (!hamburgerBtn || !mobileDrawer) return;
+    const isOpening = forceState !== undefined ? forceState : !mobileDrawer.classList.contains('open');
+
+    hamburgerBtn.classList.toggle('active', isOpening);
+    hamburgerBtn.setAttribute('aria-expanded', isOpening ? 'true' : 'false');
+    mobileDrawer.classList.toggle('open', isOpening);
+    mobileDrawer.setAttribute('aria-hidden', isOpening ? 'false' : 'true');
   }
 
-  // --- 3. Smooth Anchor Scrolling with Header Offset ---
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      const targetEl = document.querySelector(targetId);
-      if (targetEl) {
-        e.preventDefault();
-        const headerOffset = 90;
-        const elementPosition = targetEl.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-
-  // --- 4. Mobile Menu Drawer Toggle Controller ---
-  const navHamburgerBtn = document.getElementById('navHamburgerBtn');
-  const mobileNavDrawer = document.getElementById('mobileNavDrawer');
-
-  if (navHamburgerBtn && mobileNavDrawer) {
-    function toggleMobileMenu(isOpen) {
-      const open = typeof isOpen === 'boolean' ? isOpen : !mobileNavDrawer.classList.contains('open');
-      if (open) {
-        mobileNavDrawer.classList.add('open');
-        navHamburgerBtn.classList.add('active');
-        navHamburgerBtn.setAttribute('aria-expanded', 'true');
-        mobileNavDrawer.setAttribute('aria-hidden', 'false');
-      } else {
-        mobileNavDrawer.classList.remove('open');
-        navHamburgerBtn.classList.remove('active');
-        navHamburgerBtn.setAttribute('aria-expanded', 'false');
-        mobileNavDrawer.setAttribute('aria-hidden', 'true');
-      }
-    }
-
-    navHamburgerBtn.addEventListener('click', (e) => {
+  if (hamburgerBtn && mobileDrawer) {
+    hamburgerBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       toggleMobileMenu();
     });
 
-    // Close when clicking any link in the drawer
-    mobileNavDrawer.querySelectorAll('.mobile-nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        toggleMobileMenu(false);
-      });
+    // Close when tapping any navigation link inside drawer
+    mobileDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => toggleMobileMenu(false));
     });
 
-    // Close when clicking outside header or drawer
+    // Close when clicking outside drawer
     document.addEventListener('click', (e) => {
-      const header = document.getElementById('mainHeader');
-      if (header && !header.contains(e.target)) {
+      if (mobileDrawer.classList.contains('open') &&
+          !mobileDrawer.contains(e.target) &&
+          !hamburgerBtn.contains(e.target)) {
         toggleMobileMenu(false);
       }
     });
 
-    // Close on Escape key
+    // Close with Escape key
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
         toggleMobileMenu(false);
       }
     });
   }
 
-  // Debounce utility
-  function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-      const later = () => {
-        clearTimeout(timeout);
-        func(...args);
-      };
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-    };
+  // --- 3. Hero Video Autoplay Resilience ---
+  const heroVideo = document.getElementById('heroVideo');
+  if (heroVideo) {
+    heroVideo.play().catch(() => {
+      // Modern browsers permit muted autoplay
+    });
+  }
+
+  // --- 4. Smooth Active Nav Link Highlighting (Scrollspy) ---
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a[href*="#"]');
+
+  function updateActiveNav() {
+    let currentSectionId = '';
+    const scrollPos = window.scrollY + 180;
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop;
+      const height = sec.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentSectionId = sec.getAttribute('id');
+      }
+    });
+
+    if (currentSectionId) {
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        const targetId = href.includes('#') ? href.split('#')[1] : href;
+        link.classList.toggle('active', targetId === currentSectionId);
+      });
+    }
+  }
+
+  if (sections.length > 0 && navLinks.length > 0) {
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    // Immediate activation on load
+    updateActiveNav();
+
+    // Instant active underline on jump link click
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
   }
 });

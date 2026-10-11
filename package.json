@@ -1,0 +1,9 @@
+{
+  "name": "isellonline",
+  "version": "1.0.0",
+  "description": "ISellOnline — Official Website",
+  "scripts": {
+    "dev": "npx --cache /tmp/npm-cache -y live-server --port=3000",
+    "start": "npx --cache /tmp/npm-cache -y live-server --port=3000"
+  }
+}

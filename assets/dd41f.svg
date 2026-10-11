@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1160" height="57.5469" viewBox="0 0 1160 57.5469" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="Frame">
+<rect width="1160" height="57.5469" fill="url(#paint0_linear_0_30)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_30" x1="0" y1="28.7735" x2="1160" y2="28.7735" gradientUnits="userSpaceOnUse">
+<stop stop-opacity="0"/>
+<stop offset="0.08"/>
+<stop offset="0.92"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

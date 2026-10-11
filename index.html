@@ -1,629 +1,870 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PutOnline — अपना बिजनेस बढ़ाएं ऑनलाइन @ ₹999/साल</title>
-  <meta name="description" content="ना वेबसाइट का झंझट, ना कोडिंग का डर। PutOnline के साथ अपनी दुकान को ऑनलाइन लाएं सिर्फ ₹999/साल में।">
-  <link rel="stylesheet" href="styles.css">
+  <title>ISellOnline — अपना बिजनेस बढ़ाएं ऑनलाइन @ ₹999/साल</title>
+  <meta name="description"
+    content="ना कंप्यूटर की ज़रूरत, ना दुकान छोड़ कर टाइम निकालना। बस एक व्हाट्सप्प करें और हम आपकी दुकान को ऑनलाइन कर देंगे। सिर्फ ₹999/साल में!">
+  <link rel="canonical" href="https://isellonline.in/">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:site_name" content="ISellOnline">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ISellOnline — अपना बिजनेस बढ़ाएं ऑनलाइन @ ₹999/साल">
+  <meta property="og:description"
+    content="ना कंप्यूटर की ज़रूरत, ना दुकान छोड़ कर टाइम निकालना। बस एक व्हाट्सप्प करें और हम आपकी दुकान को ऑनलाइन कर देंगे। सिर्फ ₹999/साल में!">
+  <meta property="og:url" content="https://isellonline.in/">
+  <meta property="og:image" content="https://isellonline.in/assets/isellonline_og.png">
+  <meta property="og:image:secure_url" content="https://isellonline.in/assets/isellonline_og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="832">
+  <meta property="og:image:alt" content="ISellOnline — अपना बिजनेस बढ़ाएं ऑनलाइन @ ₹999/साल">
+  <meta property="og:locale" content="hi_IN">
+  <meta property="og:locale:alternate" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ISellOnline — अपना बिजनेस बढ़ाएं ऑनलाइन @ ₹999/साल">
+  <meta name="twitter:description"
+    content="ना कंप्यूटर की ज़रूरत, ना दुकान छोड़ कर टाइम निकालना। बस एक व्हाट्सप्प करें और हम आपकी दुकान को ऑनलाइन कर देंगे। सिर्फ ₹999/साल में!">
+  <meta name="twitter:image" content="https://isellonline.in/assets/isellonline_og.png">
+  <meta name="twitter:image:alt" content="ISellOnline — अपना बिजनेस बढ़ाएं ऑनलाइन @ ₹999/साल">
+
+  <meta name="theme-color" content="#25d366">
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Structured Data: WebSite & Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://isellonline.in/#website",
+        "url": "https://isellonline.in/",
+        "name": "ISellOnline",
+        "description": "भारत के स्थानीय और ऑफलाइन दुकानदारों को बिना तकनीकी झंझट के ऑनलाइन लाने का जमीनी अभियान",
+        "inLanguage": ["hi-IN", "en-IN"]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://isellonline.in/#organization",
+        "name": "ISellOnline",
+        "url": "https://isellonline.in/",
+        "logo": "https://isellonline.in/assets/isellonline_og.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-8521567359",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": ["Hindi", "English"]
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Local Store Digitization & Online Presence Setup",
+        "provider": {
+          "@id": "https://isellonline.in/#organization"
+        },
+        "serviceType": "Digitization as a Service (DaaS)",
+        "offers": {
+          "@type": "Offer",
+          "price": "999",
+          "priceCurrency": "INR",
+          "priceValidUntil": "2027-12-31",
+          "url": "https://isellonline.in/#pricing",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "शुरू करने में कितना खर्च आएगा?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "सिर्फ़ ₹999/साल + लागू GST। .com/.in address (domain) का खर्च अलग से लगभग ₹800–₹1,000 होगा, जो नाम की उपलब्धता पर निर्भर करेगा। हम आपको विकल्प दिखाने से लेकर .com/.in address (domain) खरीदने तक पूरी मदद करेंगे।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "शुरू करने के लिए क्या-क्या देना होगा?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "बस मालिक का नाम, दुकान का नाम, लोकेशन, फोन नंबर, दुकान की कम-से-कम 2 फोटो (बाहर और अंदर), और बेचने वाले 2–5 मुख्य सामान के नाम व MRP। GST नंबर हो तो वह भी दें—मार्केटप्लेस अकाउंट के लिए ज़रूरत पड़ सकती है। पूरी इन्वेंट्री बाद में भी दे सकते हैं।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "क्या मुझे कंप्यूटर या कोई नया ऐप सीखना पड़ेगा?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "बिल्कुल नहीं! WhatsApp पर जानकारी, फोटो या वॉइस नोट भेजिए। हम आपके फोन नंबर का इस्तेमाल करके अलग ईमेल ID भी बनाएँगे, जिससे ज़रूरी अकाउंट सेटअप करने में मदद मिलेगी।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "किन-किन प्लेटफ़ॉर्म पर मेरी दुकान ऑनलाइन होगी?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "आपकी दुकान और पात्रता के अनुसार Google Business Profile, Amazon, IndiaMART, ONDC और Justdial जैसे एक या अधिक प्लेटफ़ॉर्म पर सेटअप में मदद मिलेगी। जहाँ संभव होगा, ज़रूरी नोटिफ़िकेशन WhatsApp पर पाने की व्यवस्था भी करेंगे।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "क्या वेबसाइट बनने के बाद भी मदद मिलेगी?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "बिल्कुल! पहले महीने सेटअप से इस्तेमाल तक पूरी मदद। उसके बाद भी प्लान के अनुसार सालभर सहायता और 30 तक मैनुअल अपडेट रिक्वेस्ट शामिल हैं।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "क्या वेबसाइट और अकाउंट मेरे ही रहेंगे?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "जी हाँ! .com/.in address (domain) और अकाउंट जहाँ संभव हो, आपके नाम और नियंत्रण में रहेंगे। हम सेटअप और देखभाल में मदद करेंगे, मालिकाना हक़ आपका रहेगा।"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
-  <!-- ==================== GLOBAL NAVBAR ==================== -->
-  <header class="header-nav" id="mainHeader">
-    <div class="nav-wrapper">
-      <!-- Left: Logo / Wordmark -->
-      <a href="#hero" class="brand-logo" id="brandLogo">
-        <div class="logo-clay-badge">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-          </svg>
-        </div>
-        <span>PutOnline<span class="logo-dot">.</span></span>
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="nav-header">
+    <div class="nav-bar shell">
+      <a class="brand" href="#top" aria-label="ISellOnline Homepage">
+        <span class="brand__mark">
+          <img src="assets/3276c.svg" alt="" width="18" height="18">
+        </span>
+        <span>
+          ISellOnline<span class="brand__dot"></span>
+        </span>
       </a>
 
-      <!-- Center Jump Links -->
-      <ul class="nav-center-links">
-        <li><a href="#for-whom" data-hi="किसके लिए?" data-en="For Whom?">किसके लिए?</a></li>
-        <li><a href="#problem" data-hi="समस्या" data-en="Problem">समस्या</a></li>
-        <li><a href="#solution" data-hi="समाधान" data-en="Solution">समाधान</a></li>
-        <li><a href="#compare" data-hi="तुलना" data-en="Comparison">तुलना</a></li>
-        <li><a href="#process" data-hi="प्रक्रिया" data-en="Process">प्रक्रिया</a></li>
-        <li><a href="#pricing" data-hi="दाम" data-en="Pricing">दाम</a></li>
-        <li><a href="about.html" data-hi="हमारे बारे में" data-en="About">हमारे बारे में</a></li>
-      </ul>
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" aria-label="मुख्य नेविगेशन">
+        <a href="#problem" data-hi="समस्या" data-en="Problem">समस्या</a>
+        <a href="#solution" data-hi="समाधान" data-en="Solution">समाधान</a>
+        <a href="#compare" data-hi="तुलना" data-en="Comparison">तुलना</a>
+        <a href="#process" data-hi="प्रक्रिया" data-en="Process">प्रक्रिया</a>
+        <a href="#pricing" data-hi="दाम" data-en="Pricing">दाम</a>
+        <a href="#faq" data-hi="सवाल-जवाब" data-en="FAQs">सवाल-जवाब</a>
+        <a href="/about" data-hi="हमारे बारे में" data-en="About Us">हमारे बारे में</a>
+      </nav>
 
-      <!-- Right Controls: Language & CTA -->
-      <div class="nav-right-cluster">
-        <div class="lang-toggle-wrap">
-          <button class="lang-toggle-btn active" data-lang-target="hi" type="button" aria-pressed="true">हिन्दी</button>
-          <button class="lang-toggle-btn" data-lang-target="en" type="button" aria-pressed="false">EN</button>
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <div class="language-toggle" aria-label="भाषा चुनें">
+          <button class="lang-btn active" data-lang-target="hi" type="button" aria-pressed="true">हिन्दी</button>
+          <button class="lang-btn" data-lang-target="en" type="button" aria-pressed="false">EN</button>
         </div>
 
-        <a href="https://wa.me/911234567890" class="btn-whatsapp-pill header-wa-pill" target="_blank" rel="noopener noreferrer" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.88 2.791.88 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.748 0-3.385-.453-4.814-1.242l-5.217 1.367 1.393-5.086c-.895-1.488-1.408-3.23-1.408-5.097 0-5.484 4.485-9.969 9.969-9.969 5.485 0 9.969 4.485 9.969 9.969z"/>
-          </svg>
-          <span class="btn-label">व्हाट्सएप पर जुड़ें</span>
+        <a class="wa-button wa-button--compact" href="https://wa.me/918521567359" target="_blank"
+          rel="noopener noreferrer">
+          <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर जुड़ें</span>
         </a>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button class="nav-hamburger-btn" id="navHamburgerBtn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
+        <button class="hamburger-btn" id="navHamburgerBtn" type="button" aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
         </button>
       </div>
-    </div>
 
-    <!-- Mobile Drawer Menu -->
-    <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
-      <ul class="mobile-nav-links">
-        <li><a href="#for-whom" class="mobile-nav-link" data-hi="🛒 किसके लिए?" data-en="🛒 For Whom?">🛒 किसके लिए?</a></li>
-        <li><a href="#problem" class="mobile-nav-link" data-hi="⚠️ समस्या" data-en="⚠️ Problem">⚠️ समस्या</a></li>
-        <li><a href="#solution" class="mobile-nav-link" data-hi="✨ समाधान" data-en="✨ Solution">✨ समाधान</a></li>
-        <li><a href="#compare" class="mobile-nav-link" data-hi="⚖️ तुलना" data-en="⚖️ Comparison">⚖️ तुलना</a></li>
-        <li><a href="#process" class="mobile-nav-link" data-hi="🚀 प्रक्रिया" data-en="🚀 Process">🚀 प्रक्रिया</a></li>
-        <li><a href="#pricing" class="mobile-nav-link" data-hi="💎 दाम" data-en="💎 Pricing">💎 दाम</a></li>
-        <li><a href="about.html" class="mobile-nav-link" data-hi="📖 हमारे बारे में" data-en="📖 About Us">📖 हमारे बारे में</a></li>
-      </ul>
-    </nav>
+      <!-- Mobile Dropdown Drawer -->
+      <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+        <ul>
+          <li><a href="#problem" data-hi="⚠️ समस्या" data-en="⚠️ Problem">⚠️ समस्या</a></li>
+          <li><a href="#solution" data-hi="✨ समाधान" data-en="✨ Solution">✨ समाधान</a></li>
+          <li><a href="#compare" data-hi="⚖️ तुलना" data-en="⚖️ Comparison">⚖️ तुलना</a></li>
+          <li><a href="#process" data-hi="🚀 प्रक्रिया" data-en="🚀 Process">🚀 प्रक्रिया</a></li>
+          <li><a href="#pricing" data-hi="💎 दाम" data-en="💎 Pricing">💎 दाम</a></li>
+          <li><a href="#faq" data-hi="❓ सवाल-जवाब" data-en="❓ FAQs">❓ सवाल-जवाब</a></li>
+          <li><a href="/about" data-hi="📖 हमारे बारे में" data-en="📖 About Us">📖 हमारे बारे में</a></li>
+        </ul>
+        <div class="drawer-action">
+          <a class="wa-button wa-button--compact" href="https://wa.me/918521567359" target="_blank" rel="noopener noreferrer">
+            <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर जुड़ें</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
-    <!-- ==================== SECTION 1: HERO ==================== -->
-    <section class="section hero-section" id="hero">
-      <div class="container">
-        <div class="hero-split-grid">
-          <!-- Left Side: Copy, Price & CTA -->
-          <div class="hero-left-content">
-            <!-- Pill Badge -->
-            <div class="hero-pill-badge" data-hi="⚡ सिर्फ 24 घंटे में लाइव प्रोटोटाइप" data-en="⚡ Live Prototype in Just 24 Hours">
-              ⚡ सिर्फ 24 घंटे में लाइव प्रोटोटाइप
-            </div>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero shell" id="top">
+      <div class="hero__copy">
+        <span class="eyebrow" data-hi="⚡ 10 मिनट में मुफ्त वेबसाइट" data-en="⚡ Free Website in 10 Minutes">⚡ 10 मिनट में
+          मुफ्त वेबसाइट</span>
+        <h1>
+          <span data-hi="अपना बिज़नेस" data-en="Grow Your">अपना बिज़नेस</span><br>
+          <span data-hi="बढ़ाएं ऑनलाइन" data-en="Business Online">बढ़ाएं ऑनलाइन</span><br>
+          <span class="hero-price-wrap">
+            <strong class="hero-price">@ ₹999</strong>
+            <small data-hi="/साल" data-en="/year">/साल</small>
+          </span>
+        </h1>
+        <a class="wa-button" href="https://wa.me/918521567359" target="_blank" rel="noopener noreferrer">
+          <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर जुड़ें</span>
+        </a>
+      </div>
 
-            <!-- H1 Headline (Strictly NO subheadline paragraph below H1) -->
-            <h1 class="hero-h1-headline" data-hi="अपना बिजनेस बढ़ाएं ऑनलाइन<br><span class='price-highlight'>@ ₹999<span class='subscript'>/साल</span></span>" data-en="Take Your Business Online<br><span class='price-highlight'>@ ₹999<span class='subscript'>/year</span></span>">
-              अपना बिजनेस बढ़ाएं ऑनलाइन<br>
-              <span class="price-highlight">@ ₹999<span class="subscript">/साल</span></span>
-            </h1>
-
-            <!-- CTA Button -->
-            <div class="hero-cta-area">
-              <a href="https://wa.me/911234567890" class="btn-whatsapp-pill" target="_blank" rel="noopener noreferrer" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.88 2.791.88 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.748 0-3.385-.453-4.814-1.242l-5.217 1.367 1.393-5.086c-.895-1.488-1.408-3.23-1.408-5.097 0-5.484 4.485-9.969 9.969-9.969 5.485 0 9.969 4.485 9.969 9.969z"/>
-                </svg>
-                <span class="btn-label">व्हाट्सएप पर जुड़ें</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Side: Hero Media Container with Video -->
-          <div class="hero-media-wrapper">
-            <video class="hero-video-player" id="heroVideo" autoplay loop muted playsinline preload="auto">
-              <source src="assets/hero video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+      <div class="hero__visual">
+        <div class="hero-video-wrap">
+          <video class="hero-video-player" id="heroVideo" autoplay loop muted playsinline aria-label="Hero Video Demo">
+            <source src="assets/hero video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="hero-video-caption">
+            <img class="hero-video-caption__icon" src="assets/whatsapp_logo.png" alt="WhatsApp" width="26" height="26">
+            <span class="hero-video-caption__text" data-hi="आप करें एक व्हाट्सप्प, हम संभालें बांकी सब"
+              data-en="Send One WhatsApp, We Handle Everything Else">
+              आप करें एक व्हाट्सप्प, हम संभालें बांकी सब
+            </span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION 2: TARGET VERTICALS (#for-whom) ==================== -->
-    <section class="section verticals-section" id="for-whom">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" data-hi="किराना हो या दवाई, मिठाई या कपड़े का व्यापार — हर दुकान को मिलेगी ऑनलाइन रफ़्तार!" data-en="Grocery, pharmacy, sweets, or apparel — every offline store gets online momentum!">
-            किराना हो या दवाई, मिठाई या कपड़े का व्यापार — हर दुकान को मिलेगी ऑनलाइन रफ़्तार!
-          </h2>
+    <!-- ==================== MARQUEE TICKER ==================== -->
+    <div class="marquee-section" aria-label="समर्थित कारोबार">
+      <div class="marquee shell">
+        <div class="marquee__track">
+          <span data-hi="🛒 किराना व जनरल स्टोर" data-en="🛒 Grocery &amp; General Store">🛒 किराना व जनरल स्टोर</span>
+          <span data-hi="💊 मेडिकल व फार्मेसी" data-en="💊 Medical &amp; Pharmacy">💊 मेडिकल व फार्मेसी</span>
+          <span data-hi="🔧 हार्डवेयर व इलेक्ट्रिकल" data-en="🔧 Hardware &amp; Electrical">🔧 हार्डवेयर व
+            इलेक्ट्रिकल</span>
+          <span data-hi="👗 कपड़े व बुटीक" data-en="👗 Garments &amp; Boutique">👗 कपड़े व बुटीक</span>
+          <span data-hi="🍬 मिठाई व बेकरी" data-en="🍬 Sweets &amp; Bakery">🍬 मिठाई व बेकरी</span>
+          <span data-hi="📚 किताब व स्टेशनरी" data-en="📚 Books &amp; Stationery">📚 किताब व स्टेशनरी</span>
+          <span data-hi="💇 सैलून व ब्यूटी पार्लर" data-en="💇 Salon &amp; Parlour">💇 सैलून व ब्यूटी पार्लर</span>
+          <span data-hi="🩺 क्लिनिक व डॉक्टर" data-en="🩺 Clinic &amp; Doctors">🩺 क्लिनिक व डॉक्टर</span>
+          <span data-hi="🍽️ रेस्टोरेंट व कैफे" data-en="🍽️ Restaurant &amp; Cafe">🍽️ रेस्टोरेंट व कैफे</span>
+          <span data-hi="📦 थोक व मंडी व्यापारी" data-en="📦 Wholesale &amp; Trade">📦 थोक व मंडी व्यापारी</span>
+
+          <!-- Duplicate for seamless loop -->
+          <span data-hi="🛒 किराना व जनरल स्टोर" data-en="🛒 Grocery &amp; General Store" aria-hidden="true">🛒 किराना व
+            जनरल स्टोर</span>
+          <span data-hi="💊 मेडिकल व फार्मेसी" data-en="💊 Medical &amp; Pharmacy" aria-hidden="true">💊 मेडिकल व
+            फार्मेसी</span>
+          <span data-hi="🔧 हार्डवेयर व इलेक्ट्रिकल" data-en="🔧 Hardware &amp; Electrical" aria-hidden="true">🔧
+            हार्डवेयर व इलेक्ट्रिकल</span>
+          <span data-hi="👗 कपड़े व बुटीक" data-en="👗 Garments &amp; Boutique" aria-hidden="true">👗 कपड़े व
+            बुटीक</span>
+          <span data-hi="🍬 मिठाई व बेकरी" data-en="🍬 Sweets &amp; Bakery" aria-hidden="true">🍬 मिठाई व बेकरी</span>
+          <span data-hi="📚 किताब व स्टेशनरी" data-en="📚 Books &amp; Stationery" aria-hidden="true">📚 किताब व
+            स्टेशनरी</span>
+          <span data-hi="💇 सैलून व ब्यूटी पार्लर" data-en="💇 Salon &amp; Parlour" aria-hidden="true">💇 सैलून व ब्यूटी
+            पार्लर</span>
+          <span data-hi="🩺 क्लिनिक व डॉक्टर" data-en="🩺 Clinic &amp; Doctors" aria-hidden="true">🩺 क्लिनिक व
+            डॉक्टर</span>
+          <span data-hi="🍽️ रेस्टोरेंट व कैफे" data-en="🍽️ Restaurant &amp; Cafe" aria-hidden="true">🍽️ रेस्टोरेंट व
+            कैफे</span>
+          <span data-hi="📦 थोक व मंडी व्यापारी" data-en="📦 Wholesale &amp; Trade" aria-hidden="true">📦 थोक व मंडी
+            व्यापारी</span>
         </div>
+      </div>
+    </div>
 
-        <!-- Continuous Scrolling Carousel (Marquee: Moving Smoothly Left to Right) -->
-        <div class="marquee-wrapper">
-          <div class="marquee-track">
-            <!-- Sequence 1 -->
-            <div class="vertical-pill" data-hi="🛒 किराना व जनरल स्टोर" data-en="🛒 Grocery &amp; Kirana">🛒 किराना व जनरल स्टोर</div>
-            <div class="vertical-pill" data-hi="💊 मेडिकल व फार्मेसी" data-en="💊 Pharmacy &amp; Medical">💊 मेडिकल व फार्मेसी</div>
-            <div class="vertical-pill" data-hi="🔧 हार्डवेयर व इलेक्ट्रिकल" data-en="🔧 Hardware &amp; Electrical">🔧 हार्डवेयर व इलेक्ट्रिकल</div>
-            <div class="vertical-pill" data-hi="👗 कपड़े व बुटीक" data-en="👗 Garments &amp; Boutique">👗 कपड़े व बुटीक</div>
-            <div class="vertical-pill" data-hi="🍬 मिठाई व बेकरी" data-en="🍬 Sweets &amp; Bakery">🍬 मिठाई व बेकरी</div>
-            <div class="vertical-pill" data-hi="📚 किताब व स्टेशनरी" data-en="📚 Books &amp; Stationery">📚 किताब व स्टेशनरी</div>
-            <div class="vertical-pill" data-hi="💇 सैलून व ब्यूटी पार्लर" data-en="💇 Salon &amp; Parlour">💇 सैलून व ब्यूटी पार्लर</div>
-            <div class="vertical-pill" data-hi="🩺 क्लिनिक व डॉक्टर" data-en="🩺 Clinic &amp; Healthcare">🩺 क्लिनिक व डॉक्टर</div>
-            <div class="vertical-pill" data-hi="🍽️ रेस्टोरेंट व कैफे" data-en="🍽️ Restaurant &amp; Cafe">🍽️ रेस्टोरेंट व कैफे</div>
-            <div class="vertical-pill" data-hi="📦 थोक व मंडी व्यापारी" data-en="📦 Wholesale &amp; Trade">📦 थोक व मंडी व्यापारी</div>
+    <!-- ==================== PROBLEM SECTION ==================== -->
+    <section class="section section--muted" id="problem">
+      <div class="shell">
+        <h2 data-hi="कारोबार के खिलाडी, पर टेक्नोलॉजी पड़ी भारी?"
+          data-en="Masters of Retail, But Overwhelmed by Technology?">
+          कारोबार के खिलाडी, पर टेक्नोलॉजी पड़ी भारी?
+        </h2>
 
-            <!-- Sequence 2 (Duplicate for Seamless Infinite Loop) -->
-            <div class="vertical-pill" data-hi="🛒 किराना व जनरल स्टोर" data-en="🛒 Grocery &amp; Kirana" aria-hidden="true">🛒 किराना व जनरल स्टोर</div>
-            <div class="vertical-pill" data-hi="💊 मेडिकल व फार्मेसी" data-en="💊 Pharmacy &amp; Medical" aria-hidden="true">💊 मेडिकल व फार्मेसी</div>
-            <div class="vertical-pill" data-hi="🔧 हार्डवेयर व इलेक्ट्रिकल" data-en="🔧 Hardware &amp; Electrical" aria-hidden="true">🔧 हार्डवेयर व इलेक्ट्रिकल</div>
-            <div class="vertical-pill" data-hi="👗 कपड़े व बुटीक" data-en="👗 Garments &amp; Boutique" aria-hidden="true">👗 कपड़े व बुटीक</div>
-            <div class="vertical-pill" data-hi="🍬 मिठाई व बेकरी" data-en="🍬 Sweets &amp; Bakery" aria-hidden="true">🍬 मिठाई व बेकरी</div>
-            <div class="vertical-pill" data-hi="📚 किताब व स्टेशनरी" data-en="📚 Books &amp; Stationery" aria-hidden="true">📚 किताब व स्टेशनरी</div>
-            <div class="vertical-pill" data-hi="💇 सैलून व ब्यूटी पार्लर" data-en="💇 Salon &amp; Parlour" aria-hidden="true">💇 सैलून व ब्यूटी पार्लर</div>
-            <div class="vertical-pill" data-hi="🩺 क्लिनिक व डॉक्टर" data-en="🩺 Clinic &amp; Healthcare" aria-hidden="true">🩺 क्लिनिक व डॉक्टर</div>
-            <div class="vertical-pill" data-hi="🍽️ रेस्टोरेंट व कैफे" data-en="🍽️ Restaurant &amp; Cafe" aria-hidden="true">🍽️ रेस्टोरेंट व कैफे</div>
-            <div class="vertical-pill" data-hi="📦 थोक व मंडी व्यापारी" data-en="📦 Wholesale &amp; Trade" aria-hidden="true">📦 थोक व मंडी व्यापारी</div>
-          </div>
+        <div class="problem-grid">
+          <!-- Card 1 -->
+          <article class="problem-card">
+            <span class="problem-card__icon">
+              <img src="assets/3fbc5.svg" alt="" width="22" height="22">
+            </span>
+            <h3 data-hi="कंप्यूटर का झमेला" data-en="Tech Overload">कंप्यूटर का झमेला</h3>
+            <p data-hi="स्वयं से वेबसाइट बनाना और ऑनलाइन सेटअप करना जटिल है।"
+              data-en="Building websites and technical setup alone is complicated.">
+              स्वयं से वेबसाइट बनाना और ऑनलाइन सेटअप करना जटिल है।
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="problem-card">
+            <span class="problem-card__icon">
+              <img src="assets/07fc7.svg" alt="" width="22" height="22">
+            </span>
+            <h3 data-hi="समय की कमी" data-en="Time Crunch">समय की कमी</h3>
+            <p data-hi="दुकान के साथ Google, Amazon और सोशल मीडिया सँभालने का वक़्त नहीं।"
+              data-en="No time to manage Google, Amazon, and social media while running the store.">
+              दुकान के साथ Google, Amazon और सोशल मीडिया सँभालने का वक़्त नहीं।
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="problem-card">
+            <span class="problem-card__icon">
+              <img src="assets/14504.svg" alt="" width="22" height="22">
+            </span>
+            <h3 data-hi="एजेंसी का खर्चा" data-en="High Agency Fees">एजेंसी का खर्चा</h3>
+            <p data-hi="एजेंसी की फीस हज़ारों में जो छोटे कारोबारी के बजट से बाहर।"
+              data-en="Agency retainers run in thousands, far beyond a local merchant's budget.">
+              एजेंसी की फीस हज़ारों में जो छोटे कारोबारी के बजट से बाहर।
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION 3: PROBLEM (#problem) ==================== -->
-    <section class="section problem-section" id="problem">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" data-hi="सालों से कारोबार बढ़ाया, लेकिन ऑनलाइन दौर ने रास्ता उलझाया?" data-en="Decades of hard work, but tangled in the online transition?">
-            सालों से कारोबार बढ़ाया, लेकिन ऑनलाइन दौर ने रास्ता उलझाया?
-          </h2>
-        </div>
+    <!-- ==================== SOLUTION SECTION ==================== -->
+    <section class="section" id="solution">
+      <div class="shell">
+        <h2 data-hi="हम दें आपके कारोबार को नयी ऑनलाइन रफ़्तार !"
+          data-en="We Give Your Store High-Gear Online Momentum!">
+          हम दें आपके कारोबार को नयी ऑनलाइन रफ़्तार !
+        </h2>
 
-        <div class="problem-grid-3">
-          <!-- Card 1: Tech Overload -->
-          <div class="problem-compact-card c-peach">
-            <div class="problem-icon-circle">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-            </div>
-            <h3 class="problem-title" data-hi="तकनीक का झंझट" data-en="Tech Overload">तकनीक का झंझट</h3>
-            <p class="problem-desc" data-hi="न कंप्यूटर का सिरदर्द, न Amazon-IndiaMART के कड़े नियम। फॉर्म भरें या गल्ला संभालें?" data-en="No tech headaches, no rigid marketplace rules. Should you handle endless forms or your shop counter?">
-              न कंप्यूटर का सिरदर्द, न Amazon-IndiaMART के कड़े नियम। फॉर्म भरें या गल्ला संभालें?
-            </p>
-          </div>
-
-          <!-- Card 2: Time Crunch -->
-          <div class="problem-compact-card c-indigo">
-            <div class="problem-icon-circle">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-            </div>
-            <h3 class="problem-title" data-hi="समय की कमी" data-en="Time Crunch">समय की कमी</h3>
-            <p class="problem-desc" data-hi="गूगल, व्हाट्सएप, सोशल मीडिया—इतने सारे खाते रोज चलाने का वक्त किसके पास है?" data-en="Google, WhatsApp, social channels—who has the extra hours to update them daily?">
-              गूगल, व्हाट्सएप, सोशल मीडिया—इतने सारे खाते रोज चलाने का वक्त किसके पास है?
-            </p>
-          </div>
-
-          <!-- Card 3: Agency Retainers -->
-          <div class="problem-compact-card c-rose">
-            <div class="problem-icon-circle">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <line x1="12" y1="1" x2="12" y2="23"></line>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-              </svg>
-            </div>
-            <h3 class="problem-title" data-hi="एजेंसी की मार" data-en="Agency Retainers">एजेंसी की मार</h3>
-            <p class="problem-desc" data-hi="हर महीने हजारों की फीस मांगती हैं एजेंसियां, नतीजा ढाक के तीन पात।" data-en="Agencies demand thousands in monthly fees with zero real results to show for it.">
-              हर महीने हजारों की फीस मांगती हैं एजेंसियां, नतीजा ढाक के तीन पात।
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== SECTION 4: SOLUTION (#solution) ==================== -->
-    <section class="section solution-section" id="solution">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" data-hi="दुकान आपकी वही पुरानी, ऑनलाइन पहचान से बनेगी तूफानी!" data-en="Your trusted store, supercharged with a digital footprint!">
-            दुकान आपकी वही पुरानी, ऑनलाइन पहचान से बनेगी तूफानी!
-          </h2>
-        </div>
-
-        <!-- Clean, borderless icon + text grid -->
-        <div class="solution-clean-grid">
+        <div class="solution-grid">
           <!-- 1. Website -->
-          <div class="solution-borderless-item">
-            <div class="solution-borderless-icon" style="color: #4361ee;">🌐</div>
+          <article class="solution-item">
+            <span class="solution-item__icon">🌐</span>
             <div>
-              <h3 class="solution-borderless-h3" data-hi="वेबसाइट (हिंदी + English)" data-en="Website (Hindi + English)">वेबसाइट (हिंदी + English)</h3>
-              <p class="solution-borderless-p" data-hi="फोन और कंप्यूटर दोनों पर तेज चलने वाली द्विभाषी 1-पेज वेबसाइट।" data-en="Fast 1-page bilingual website running smoothly on mobile and desktop.">
+              <h3 data-hi="वेबसाइट (हिंदी + English)" data-en="Website (Hindi + English)">वेबसाइट (हिंदी + English)</h3>
+              <p data-hi="फोन और कंप्यूटर दोनों पर तेज चलने वाली द्विभाषी 1-पेज वेबसाइट।"
+                data-en="Fast 1-page bilingual website running on phones and desktops.">
                 फोन और कंप्यूटर दोनों पर तेज चलने वाली द्विभाषी 1-पेज वेबसाइट।
               </p>
             </div>
-          </div>
+          </article>
 
           <!-- 2. Google Maps -->
-          <div class="solution-borderless-item">
-            <div class="solution-borderless-icon" style="color: #10b981;">📍</div>
+          <article class="solution-item">
+            <span class="solution-item__icon">📍</span>
             <div>
-              <h3 class="solution-borderless-h3" data-hi="गूगल मैप्स" data-en="Google Maps">गूगल मैप्स</h3>
-              <p class="solution-borderless-p" data-hi="वेरिफाइड बिजनेस प्रोफाइल और सटीक लोकेशन पिन।" data-en="Verified Google Business Profile and exact location pin.">
+              <h3 data-hi="गूगल मैप्स" data-en="Google Maps">गूगल मैप्स</h3>
+              <p data-hi="वेरिफाइड बिजनेस प्रोफाइल और सटीक लोकेशन पिन।"
+                data-en="Verified Google Business Profile and accurate location pin.">
                 वेरिफाइड बिजनेस प्रोफाइल और सटीक लोकेशन पिन।
               </p>
             </div>
-          </div>
+          </article>
 
-          <!-- 3. WhatsApp Business -->
-          <div class="solution-borderless-item">
-            <div class="solution-borderless-icon" style="color: #25d366;">💬</div>
+          <!-- 3. Marketplaces & ONDC -->
+          <article class="solution-item">
+            <span class="solution-item__icon">🛒</span>
             <div>
-              <h3 class="solution-borderless-h3" data-hi="व्हाट्सएप बिजनेस" data-en="WhatsApp Business">व्हाट्सएप बिजनेस</h3>
-              <p class="solution-borderless-p" data-hi="ऑटो-रिप्लाई, डिजिटल कैटलॉग और डायरेक्ट ऑर्डर बटन।" data-en="Automated catalogue, welcome greetings, and direct order button.">
+              <h3 data-hi="उपयुक्त मार्केटप्लेस व ONDC" data-en="Marketplaces &amp; ONDC">उपयुक्त मार्केटप्लेस व ONDC
+              </h3>
+              <p data-hi="कारोबार के हिसाब से Amazon, IndiaMart, JustDial और सरकारी ONDC पर लिस्टिंग।"
+                data-en="Tailored listings on Amazon, IndiaMart, JustDial, and government ONDC.">
+                कारोबार के हिसाब से Amazon, IndiaMart, JustDial और सरकारी ONDC पर लिस्टिंग।
+              </p>
+            </div>
+          </article>
+
+          <!-- 4. WhatsApp Business -->
+          <article class="solution-item">
+            <span class="solution-item__icon">💬</span>
+            <div>
+              <h3 data-hi="व्हाट्सएप बिजनेस" data-en="WhatsApp Business">व्हाट्सएप बिजनेस</h3>
+              <p data-hi="ऑटो-रिप्लाई, डिजिटल कैटलॉग और डायरेक्ट ऑर्डर बटन।"
+                data-en="Auto-reply, digital catalogue, and direct ordering button.">
                 ऑटो-रिप्लाई, डिजिटल कैटलॉग और डायरेक्ट ऑर्डर बटन।
               </p>
             </div>
-          </div>
+          </article>
 
-          <!-- 4. AI Assistant -->
-          <div class="solution-borderless-item">
-            <div class="solution-borderless-icon" style="color: #8b5cf6;">🤖</div>
+          <!-- 5. AI Business Assistant -->
+          <article class="solution-item">
+            <span class="solution-item__icon">🤖</span>
             <div>
-              <h3 class="solution-borderless-h3" data-hi="AI बिजनेस असिस्टेंट" data-en="AI Business Assistant">AI बिजनेस असिस्टेंट</h3>
-              <p class="solution-borderless-p" data-hi="ग्राहक को आपसे फोन पर पूछने से पहले ही 24×7 हर सामान की जानकारी मिल जाए।" data-en="24×7 stock info for customers before they even need to place a call.">
+              <h3 data-hi="AI बिजनेस असिस्टेंट" data-en="AI Business Assistant">AI बिजनेस असिस्टेंट</h3>
+              <p data-hi="ग्राहक को आपसे फोन पर पूछने से पहले ही 24×7 हर सामान की जानकारी मिल जाए।"
+                data-en="Instant 24×7 stock answers for customers before they even need to call.">
                 ग्राहक को आपसे फोन पर पूछने से पहले ही 24×7 हर सामान की जानकारी मिल जाए।
               </p>
             </div>
-          </div>
-
-          <!-- 5. Marketplaces & ONDC -->
-          <div class="solution-borderless-item">
-            <div class="solution-borderless-icon" style="color: #ff6b35;">🛒</div>
-            <div>
-              <h3 class="solution-borderless-h3" data-hi="उपयुक्त मार्केटप्लेस व ONDC" data-en="Marketplaces & ONDC">उपयुक्त मार्केटप्लेस व ONDC</h3>
-              <p class="solution-borderless-p" data-hi="जरूरत के हिसाब से Amazon, इंडियामार्ट और सरकारी ONDC पर लिस्टिंग।" data-en="Guided onboarding on Amazon, IndiaMART, and the national ONDC network as needed.">
-                जरूरत के हिसाब से Amazon, इंडियामार्ट और सरकारी ONDC पर लिस्टिंग।
-              </p>
-            </div>
-          </div>
+          </article>
 
           <!-- 6. Local Discovery (Local X) -->
-          <div class="solution-borderless-item">
-            <div class="solution-borderless-icon" style="color: #06d6a0;">🔍</div>
+          <article class="solution-item">
+            <span class="solution-item__icon">🔍</span>
             <div>
-              <h3 class="solution-borderless-h3" data-hi="लोकल डिस्कवरी (Local X)" data-en="Local Discovery (Local X)">लोकल डिस्कवरी (Local X)</h3>
-              <p class="solution-borderless-p" data-hi="जल्द ही आ रहा है—शहर-स्तरीय वॉयस-सर्च नेटवर्क पर आपकी दुकान का नाम।" data-en="Coming soon: your store featured on city-wide voice discovery network.">
-                जल्द ही आ रहा है—शहर-स्तरीय वॉयस-सर्च नेटवर्क पर आपकी दुकान का नाम।
+              <h3 data-hi="लोकल डिस्कवरी (Local X)" data-en="Local Discovery (Local X)">लोकल डिस्कवरी (Local X)</h3>
+              <p data-hi="*जल्द ही आ रहा है—शहर-स्तरीय वॉयस-सर्च नेटवर्क पर आपकी दुकान का नाम।"
+                data-en="*Coming soon—Your store featured on the city-wide voice search network.">
+                *जल्द ही आ रहा है—शहर-स्तरीय वॉयस-सर्च नेटवर्क पर आपकी दुकान का नाम।
               </p>
             </div>
+          </article>
+        </div>
+
+        <div class="center">
+          <a class="wa-button" href="https://wa.me/918521567359" target="_blank" rel="noopener noreferrer">
+            <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर
+              जुड़ें</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COMPARISON SECTION ==================== -->
+    <section class="section section--muted" id="compare">
+      <div class="shell">
+        <h2 data-hi="ऑफलाइन आये सिर्फ राहगीर, ऑनलाइन पहुंचे कोई भी"
+          data-en="Offline Reaches Passersby, Online Reaches Everyone">
+          ऑफलाइन आये सिर्फ राहगीर, ऑनलाइन पहुंचे कोई भी
+        </h2>
+
+        <div class="comparison-wrap">
+          <div class="comparison-table-scroll">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th data-hi="स्थिति" data-en="Status / Metrics">स्थिति</th>
+                  <th data-hi="आपकी सिर्फ ऑफलाइन दुकान" data-en="Offline Alone">आपकी सिर्फ ऑफलाइन दुकान</th>
+                  <th data-hi="ISellOnline के साथ ऑनलाइन दुकान" data-en="With ISellOnline Online Store">ISellOnline के
+                    साथ ऑनलाइन दुकान</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th data-hi="ग्राहक का दायरा" data-en="Customer Reach">ग्राहक का दायरा</th>
+                  <td data-hi="सिर्फ दुकान से गुजरने और जानने वाले" data-en="Only walk-by visitors and regulars">सिर्फ
+                    दुकान से गुजरने और जानने वाले</td>
+                  <td data-hi="पूरे शहर व इलाके के नए ग्राहक" data-en="New customers across the entire city">पूरे शहर व
+                    इलाके के नए ग्राहक</td>
+                </tr>
+                <tr>
+                  <th data-hi="दुकान का समय" data-en="Store Hours">दुकान का समय</th>
+                  <td data-hi="सुबह 9 से रात 9 बजे तक" data-en="Fixed hours (e.g., 9 AM to 9 PM)">सुबह 9 से रात 9 बजे तक
+                  </td>
+                  <td data-hi="24×7 खुली डिजिटल दुकान" data-en="24×7 Open Digital Storefront">24×7 खुली डिजिटल दुकान
+                  </td>
+                </tr>
+                <tr>
+                  <th data-hi="ऑनलाइन मौजूदगी" data-en="Online Presence">ऑनलाइन मौजूदगी</th>
+                  <td data-hi="गूगल या इंटरनेट पर पूरी तरह गायब" data-en="Completely absent on Google or internet">गूगल
+                    या इंटरनेट पर पूरी तरह गायब</td>
+                  <td data-hi="नाम/सामान सर्च करते ही हाजिर" data-en="Instantly visible when searching shop or goods">
+                    नाम/सामान सर्च करते ही हाजिर</td>
+                </tr>
+                <tr>
+                  <th data-hi="प्रचार" data-en="Marketing">प्रचार</th>
+                  <td data-hi="सिर्फ पर्चे या मुंहजबानी बात" data-en="Only flyers or word of mouth">सिर्फ पर्चे या
+                    मुंहजबानी बात</td>
+                  <td data-hi="व्हाट्सएप स्टेटस और सोशल मीडिया पर सीधा प्रचार"
+                    data-en="Direct broadcast on WhatsApp Status and social media">व्हाट्सएप स्टेटस और सोशल मीडिया पर
+                    सीधा प्रचार</td>
+                </tr>
+                <tr>
+                  <th data-hi="सामान की पूछताछ" data-en="Item Inquiries">सामान की पूछताछ</th>
+                  <td data-hi="हर बार दुकानदार को फोन या चक्कर" data-en="Repeated phone calls or store visits">हर बार
+                    दुकानदार को फोन या चक्कर</td>
+                  <td data-hi="AI असिस्टेंट से ग्राहक को तुरंत जवाब"
+                    data-en="Instant automated answers via AI Assistant">AI असिस्टेंट से ग्राहक को तुरंत जवाब</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
-        <!-- Inline Maintenance Pointer (Subtle, not a loud box) -->
-        <div class="inline-maintenance-pointer" data-hi="📞 <em>वॉयस-बेस्ड फ्री मेंटेनेंस: कभी भी कोई फोटो, दाम या जानकारी बदलनी हो? बस एक वॉयस नोट या कॉल करें, वेबसाइट पर तुरंत काम हो जाएगा।</em>" data-en="📞 <em>Voice-Based Free Maintenance: Need to update photos or rates? Just send a voice note or call; updates go live immediately.</em>">
-          📞 <em>वॉयस-बेस्ड फ्री मेंटेनेंस: कभी भी कोई फोटो, दाम या जानकारी बदलनी हो? बस एक वॉयस नोट या कॉल करें, वेबसाइट पर तुरंत काम हो जाएगा।</em>
-        </div>
-
-        <!-- Section Bottom CTA -->
-        <div class="section-bottom-cta">
-          <a href="https://wa.me/911234567890" class="btn-whatsapp-pill" target="_blank" rel="noopener noreferrer" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.88 2.791.88 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.748 0-3.385-.453-4.814-1.242l-5.217 1.367 1.393-5.086c-.895-1.488-1.408-3.23-1.408-5.097 0-5.484 4.485-9.969 9.969-9.969 5.485 0 9.969 4.485 9.969 9.969z"/>
-            </svg>
-            <span class="btn-label">व्हाट्सएप पर जुड़ें</span>
+        <div class="center">
+          <a class="wa-button" href="https://wa.me/918521567359" target="_blank" rel="noopener noreferrer">
+            <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर
+              जुड़ें</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION 5: TRADE-OFF COMPARISON (#compare) ==================== -->
-    <section class="section compare-section" id="compare">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" data-hi="सिर्फ़ राहगीर का भरोसा और दूर ग्राहक का न्योता — ऐसा कमाल करता है ऑनलाइन + ऑफलाइन का समझौता!" data-en="Walk-by footfall vs. city-wide demand — The unstoppable edge of online + offline synergy!">
-            सिर्फ़ राहगीर का भरोसा और दूर ग्राहक का न्योता — ऐसा कमाल करता है ऑनलाइन + ऑफलाइन का समझौता!
-          </h2>
-        </div>
+    <!-- ==================== PROCESS SECTION ==================== -->
+    <section class="section" id="process">
+      <div class="shell">
+        <h2 data-hi="आप करें एक व्हाट्सप्प, हम संभालें बांकी सब" data-en="Send One WhatsApp, We Handle Everything Else">
+          आप करें एक व्हाट्सप्प, हम संभालें बांकी सब
+        </h2>
 
-        <!-- Mobile Table Scroll Hint -->
-        <div class="mobile-table-scroll-hint" data-hi="👈 दोनों कॉलम देखने के लिए बाएं-दाएं स्वाइप करें 👉" data-en="👈 Swipe horizontally to view full comparison 👉">
-          👈 दोनों कॉलम देखने के लिए बाएं-दाएं स्वाइप करें 👉
-        </div>
-
-        <div class="comparison-table-card">
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th data-hi="स्थिति" data-en="Status / Metrics">स्थिति</th>
-                <th data-hi="सिर्फ ऑफलाइन दुकान" data-en="Offline Alone">सिर्फ ऑफलाइन दुकान</th>
-                <th class="col-putonline" data-hi="PutOnline के साथ आपकी दुकान" data-en="With PutOnline">PutOnline के साथ आपकी दुकान</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="col-metric" data-hi="ग्राहक का दायरा" data-en="Customer Reach">ग्राहक का दायरा</td>
-                <td class="col-offline" data-hi="सिर्फ दुकान के आगे से गुजरने वाले" data-en="Limited to walk-bys">सिर्फ दुकान के आगे से गुजरने वाले</td>
-                <td class="col-putonline" data-hi="पूरे शहर व इलाके के नए ग्राहक" data-en="City-wide visibility &amp; demand">पूरे शहर व इलाके के नए ग्राहक</td>
-              </tr>
-              <tr>
-                <td class="col-metric" data-hi="दुकान का समय" data-en="Store Availability">दुकान का समय</td>
-                <td class="col-offline" data-hi="सुबह 9 से रात 9 बजे तक" data-en="Fixed business hours (e.g. 9am–9pm)">सुबह 9 से रात 9 बजे तक</td>
-                <td class="col-putonline" data-hi="24×7 खुली डिजिटल दुकान" data-en="Open round-the-clock 24×7">24×7 खुली डिजिटल दुकान</td>
-              </tr>
-              <tr>
-                <td class="col-metric" data-hi="ऑनलाइन मौजूदगी" data-en="Online Presence">ऑनलाइन मौजूदगी</td>
-                <td class="col-offline" data-hi="गूगल या इंटरनेट पर पूरी तरह गायब" data-en="Completely invisible on Google or Internet">गूगल या इंटरनेट पर पूरी तरह गायब</td>
-                <td class="col-putonline" data-hi="नाम सर्च करते ही लोकेशन, फोन व सामान हाजिर" data-en="Instant map pin, phone &amp; stock visible">नाम सर्च करते ही लोकेशन, फोन व सामान हाजिर</td>
-              </tr>
-              <tr>
-                <td class="col-metric" data-hi="प्रचार" data-en="Marketing">प्रचार</td>
-                <td class="col-offline" data-hi="सिर्फ पर्चे या मुंहजबानी बात" data-en="Only pamphlets or word-of-mouth">सिर्फ पर्चे या मुंहजबानी बात</td>
-                <td class="col-putonline" data-hi="व्हाट्सएप स्टेटस और सोशल मीडिया पर सीधा प्रचार" data-en="Direct promo on WhatsApp Status &amp; social media">व्हाट्सएप स्टेटस और सोशल मीडिया पर सीधा प्रचार</td>
-              </tr>
-              <tr>
-                <td class="col-metric" data-hi="सामान की पूछताछ" data-en="Item Inquiries">सामान की पूछताछ</td>
-                <td class="col-offline" data-hi="हर बार दुकानदार को फोन या चक्कर" data-en="Repeated phone calls or store trips">हर बार दुकानदार को फोन या चक्कर</td>
-                <td class="col-putonline" data-hi="AI असिस्टेंट से ग्राहक को तुरंत जवाब" data-en="Instant automated answers from AI assistant">AI असिस्टेंट से ग्राहक को तुरंत जवाब</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Section Bottom CTA -->
-        <div class="section-bottom-cta">
-          <a href="https://wa.me/911234567890" class="btn-whatsapp-pill" target="_blank" rel="noopener noreferrer" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.88 2.791.88 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.748 0-3.385-.453-4.814-1.242l-5.217 1.367 1.393-5.086c-.895-1.488-1.408-3.23-1.408-5.097 0-5.484 4.485-9.969 9.969-9.969 5.485 0 9.969 4.485 9.969 9.969z"/>
-            </svg>
-            <span class="btn-label">व्हाट्सएप पर जुड़ें</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== SECTION 6: PROCESS (#process) ==================== -->
-    <section class="section process-section" id="process">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" data-hi="ना कोई फॉर्म, ना गोल-गोल बात — दुकान आपकी ऑनलाइन रातों-रात!" data-en="No complex forms, no evasive talk — your store live overnight!">
-            ना कोई फॉर्म, ना गोल-गोल बात — दुकान आपकी ऑनलाइन रातों-रात!
-          </h2>
-        </div>
-
-        <!-- 4 Pure Floating Geometric Shapes (Centers connected by curved SVG arrows, NO shape names in text) -->
-        <div class="floating-shapes-track">
+        <div class="steps">
           <!-- Step 1: Triangle -->
-          <div class="floating-step-item">
-            <div class="pure-floating-shape shape-triangle">1</div>
-            <h3 class="floating-step-h3" data-hi="दुकान की बात" data-en="Share Details">दुकान की बात</h3>
-            <p class="floating-step-p" data-hi="व्हाट्सएप पर 2 मिनट के वॉयस नोट से नाम, पता और मुख्य सामान बताएं।" data-en="WhatsApp a 2-minute voice note with shop name, address, and main stock.">
-              व्हाट्सएप पर 2 मिनट के वॉयस नोट से नाम, पता और मुख्य सामान बताएं।
+          <article class="step">
+            <div class="step__shape-wrapper">
+              <svg class="step__shape-svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-label="Step 1">
+                <defs>
+                  <linearGradient id="stepGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff6b5a" />
+                    <stop offset="100%" stop-color="#ff8c70" />
+                  </linearGradient>
+                </defs>
+                <path d="M40 0L0 80H80L40 0Z" fill="url(#stepGrad1)" />
+                <text x="40" y="52" text-anchor="middle" dominant-baseline="central" fill="#ffffff"
+                  font-family="'Poppins', sans-serif" font-weight="700" font-size="28">1</text>
+              </svg>
+            </div>
+            <img class="step__arrow" src="assets/fdeac.svg" alt="" aria-hidden="true">
+            <h3 data-hi="दुकान की जानकारी दें" data-en="Share Store Details">दुकान की जानकारी दें</h3>
+            <p data-hi="व्हाट्सएप पर 2 मिनट के वॉयस-नोट से नाम, पता, GST और कुछ फोटोज़ भेंजें।"
+              data-en="Send a 2-minute voice note on WhatsApp with name, address, GST, and photos.">
+              व्हाट्सएप पर 2 मिनट के वॉयस-नोट से नाम, पता, GST और कुछ फोटोज़ भेंजें।
             </p>
-            <!-- Curved SVG Arrow linking to Step 2 -->
-            <svg class="curved-arrow-linker" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-              <path d="M4 14c12-14 26-8 34-2m0 0l-7-5m7 5l-5 7"/>
-            </svg>
-          </div>
+          </article>
 
           <!-- Step 2: Diamond -->
-          <div class="floating-step-item">
-            <div class="pure-floating-shape shape-diamond">2</div>
-            <h3 class="floating-step-h3" data-hi="प्रोटोटाइप तैयार" data-en="Prototype Ready">प्रोटोटाइप तैयार</h3>
-            <p class="floating-step-p" data-hi="24 घंटे में आपकी नई ईमेल आईडी और वेबसाइट का पहला रूप तैयार।" data-en="Receive your new email ID and first website preview within 24 hours.">
-              24 घंटे में आपकी नई ईमेल आईडी और वेबसाइट का पहला रूप तैयार।
+          <article class="step">
+            <div class="step__shape-wrapper">
+              <svg class="step__shape-svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-label="Step 2">
+                <defs>
+                  <linearGradient id="stepGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#4361ee" />
+                    <stop offset="100%" stop-color="#b8a4ed" />
+                  </linearGradient>
+                </defs>
+                <path d="M40 0L80 40L40 80L0 40L40 0Z" fill="url(#stepGrad2)" />
+                <text x="40" y="41" text-anchor="middle" dominant-baseline="central" fill="#ffffff"
+                  font-family="'Poppins', sans-serif" font-weight="700" font-size="28">2</text>
+              </svg>
+            </div>
+            <img class="step__arrow" src="assets/fdeac.svg" alt="" aria-hidden="true">
+            <h3 data-hi="जांचें और अप्रूव करें" data-en="Review &amp; Approve">जांचें और अप्रूव करें</h3>
+            <p data-hi="१० मिनट में एक सैंपल वेबसाइट देखें, .com/.in address (domain) चुनें और भुगतान करें।"
+              data-en="Review a sample website in 10 minutes, choose your .com/.in address (domain), and pay.">
+              १० मिनट में एक सैंपल वेबसाइट देखें, .com/.in address (domain) चुनें और भुगतान करें।
             </p>
-            <!-- Curved SVG Arrow linking to Step 3 -->
-            <svg class="curved-arrow-linker" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-              <path d="M4 14c12-14 26-8 34-2m0 0l-7-5m7 5l-5 7"/>
-            </svg>
-          </div>
+          </article>
 
-          <!-- Step 3: Pentagon -->
-          <div class="floating-step-item">
-            <div class="pure-floating-shape shape-pentagon">3</div>
-            <h3 class="floating-step-h3" data-hi="जांचें और अप्रूव करें" data-en="Review &amp; Approve">जांचें और अप्रूव करें</h3>
-            <p class="floating-step-p" data-hi="अपने फोन पर वेबसाइट देखें, बदलाव बताएं, और संतुष्ट होकर पेमेंट करें।" data-en="Check the demo on your mobile, suggest edits, and pay only when satisfied.">
-              अपने फोन पर वेबसाइट देखें, बदलाव बताएं, और संतुष्ट होकर पेमेंट करें।
+          <!-- Step 3: Star -->
+          <article class="step">
+            <div class="step__shape-wrapper">
+              <svg class="step__shape-svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-label="Step 3">
+                <defs>
+                  <linearGradient id="stepGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#e8b94a" />
+                    <stop offset="100%" stop-color="#f59e0b" />
+                  </linearGradient>
+                </defs>
+                <path d="M40 0L48.8 28H78.4L54.4 45.6L63.2 72.8L40 56L16.8 72.8L25.6 45.6L1.6 28H31.2L40 0Z"
+                  fill="url(#stepGrad3)" />
+                <text x="40" y="42" text-anchor="middle" dominant-baseline="central" fill="#ffffff"
+                  font-family="'Poppins', sans-serif" font-weight="700" font-size="28">3</text>
+              </svg>
+            </div>
+            <h3 data-hi="दुकान लाइव" data-en="Store Goes Live">दुकान लाइव</h3>
+            <p data-hi="हम आपके दुकान का वेबसाइट और मार्केटप्लेस अकाउंट बनाएंगे ।"
+              data-en="We build your store website and configure your marketplace accounts.">
+              हम आपके दुकान का वेबसाइट और मार्केटप्लेस अकाउंट बनाएंगे ।
             </p>
-            <!-- Curved SVG Arrow linking to Step 4 -->
-            <svg class="curved-arrow-linker" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-              <path d="M4 14c12-14 26-8 34-2m0 0l-7-5m7 5l-5 7"/>
-            </svg>
-          </div>
-
-          <!-- Step 4: Star -->
-          <div class="floating-step-item">
-            <div class="pure-floating-shape shape-star">4</div>
-            <h3 class="floating-step-h3" data-hi="दुकान लाइव:" data-en="Store Go-Live:">दुकान लाइव:</h3>
-            <p class="floating-step-p" data-hi="हम ऑनलाइन पता (डोमेन) जोड़ेंगे और दुकान को वेबसाइट व मार्केटप्लेस पर लाइव कर देंगे।" data-en="We link your official domain and launch your store on the website and marketplaces.">
-              हम ऑनलाइन पता (डोमेन) जोड़ेंगे और दुकान को वेबसाइट व मार्केटप्लेस पर लाइव कर देंगे।
-            </p>
-          </div>
+          </article>
         </div>
 
-        <!-- Section Bottom CTA -->
-        <div class="section-bottom-cta">
-          <a href="https://wa.me/911234567890" class="btn-whatsapp-pill" target="_blank" rel="noopener noreferrer" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.88 2.791.88 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.748 0-3.385-.453-4.814-1.242l-5.217 1.367 1.393-5.086c-.895-1.488-1.408-3.23-1.408-5.097 0-5.484 4.485-9.969 9.969-9.969 5.485 0 9.969 4.485 9.969 9.969z"/>
-            </svg>
-            <span class="btn-label">व्हाट्सएप पर जुड़ें</span>
+        <p class="owner-note"
+          data-hi="<strong>आप मालिक, हम सहायक:</strong> सारे अकाउंट आपके नाम/ईमेल/फ़ोन से जुड़ा होगा। हम बस सेटअप और मेंटेनेंस करेंगे।"
+          data-en="<strong>You Own, We Assist:</strong> All accounts remain tied to your name, phone, and email. We only handle setup and maintenance.">
+          <strong>आप मालिक, हम सहायक:</strong> सारे अकाउंट आपके नाम/ईमेल/फ़ोन से जुड़ा होगा। हम बस सेटअप और मेंटेनेंस
+          करेंगे।
+        </p>
+
+        <div class="center">
+          <a class="wa-button" href="https://wa.me/918521567359" target="_blank" rel="noopener noreferrer">
+            <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर
+              जुड़ें</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION 7: PRICING (#pricing) ==================== -->
-    <section class="section pricing-section" id="pricing">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" data-hi="आम के आम, गुठलियों के दाम!" data-en="Affordable value where the returns far outweigh the cost!">
-            आम के आम, गुठलियों के दाम!
-          </h2>
-        </div>
+    <!-- ==================== PRICING SECTION ==================== -->
+    <section class="section section--muted" id="pricing">
+      <div class="shell">
+        <h2 data-hi="आम के आम, गुठलियों के दाम!" data-en="Pure Value, Complete Return!">
+          आम के आम, गुठलियों के दाम!
+        </h2>
+        <p class="section-subtitle" data-hi="क्यूंकि महीने में एक ऑनलाइन ग्राहक भी पुरे साल का खर्च वसूल करा दे"
+          data-en="Because even a single online customer each month recovers your entire annual cost">
+          क्यूंकि महीने में एक ऑनलाइन ग्राहक भी पुरे साल का खर्च वसूल करा दे
+        </p>
 
-        <div class="pricing-2cards-grid">
-          <!-- Card 1: Standard Plan -->
-          <div class="pricing-clay-card">
-            <h3 class="pricing-tier-h3">Standard</h3>
-
-            <div class="pricing-rate-row">
-              <span class="currency">₹</span>
-              <span class="rate-val">999</span>
-              <span class="rate-sub" data-hi="/साल" data-en="/year">/साल</span>
+        <div class="pricing-grid">
+          <!-- Card 1: Standard -->
+          <article class="price-card">
+            <h3 data-hi="Standard" data-en="Standard">Standard</h3>
+            <div class="rate">
+              <span>₹</span>
+              <strong>999</strong>
+              <small data-hi="/साल" data-en="/year">/साल</small>
             </div>
 
-            <ul class="pricing-check-list">
+            <ul class="feature-list">
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="हिंदी + English 1-पेज रिस्पॉन्सिव वेबसाइट (मोबाइल + डेस्कटॉप)" data-en="Hindi + English 1-page responsive website (mobile + desktop)">हिंदी + English 1-पेज रिस्पॉन्सिव वेबसाइट (मोबाइल + डेस्कटॉप)</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="हिंदी + English 1-पेज वेबसाइट (मोबाइल + डेस्कटॉप)"
+                  data-en="Hindi + English 1-page website (mobile + desktop)">हिंदी + English 1-पेज वेबसाइट (मोबाइल +
+                  डेस्कटॉप)</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="गूगल मैप्स पिन और व्हाट्सएप बिजनेस कैटलॉग सेटअप" data-en="Google Maps Pin & WhatsApp Business catalogue setup">गूगल मैप्स पिन और व्हाट्सएप बिजनेस कैटलॉग सेटअप</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="गूगल मैप्स पिन और व्हाट्सएप बिजनेस कैटलॉग सेटअप"
+                  data-en="Google Maps pin and WhatsApp Business catalogue setup">गूगल मैप्स पिन और व्हाट्सएप बिजनेस
+                  कैटलॉग सेटअप</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="सोशल मीडिया प्रोफाइल्स सेटअप (FB / Instagram / YouTube)" data-en="Social media profiles setup (FB / Instagram / YouTube)">सोशल मीडिया प्रोफाइल्स सेटअप (FB / Instagram / YouTube)</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="उपयुक्त मार्केटप्लेस व ONDC पर लिस्टिंग सहयोग"
+                  data-en="Listing assistance on suitable marketplaces &amp; ONDC">उपयुक्त मार्केटप्लेस व ONDC पर
+                  लिस्टिंग सहयोग</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="पहले महीने में 5 प्रमोशनल पोस्ट (3 फोटो + 2 वीडियो)" data-en="5 promotional posts in Month 1 (3 images + 2 short videos)">पहले महीने में 5 प्रमोशनल पोस्ट (3 फोटो + 2 वीडियो)</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="सोशल मीडिया सेटअप (FB / Instagram / YouTube)"
+                  data-en="Social media setup (FB / Instagram / YouTube)">सोशल मीडिया सेटअप (FB / Instagram /
+                  YouTube)</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="उपयुक्त मार्केटप्लेस व ONDC पर लिस्टिंग सहयोग" data-en="Listing support on suitable marketplaces & ONDC">उपयुक्त मार्केटप्लेस व ONDC पर लिस्टिंग सहयोग</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="पहले महीने में 5 प्रमोशनल पोस्ट (3 फोटो + 2 वीडियो)"
+                  data-en="5 promotional posts in Month 1 (3 photos + 2 videos)">पहले महीने में 5 प्रमोशनल पोस्ट (3 फोटो
+                  + 2 वीडियो)</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="आने वाले Local X शहर-स्तरीय सर्च नेटवर्क में सीधी एंट्री" data-en="Early-access entry to upcoming Local X city-wide search network">आने वाले Local X शहर-स्तरीय सर्च नेटवर्क में सीधी एंट्री</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="1 महीने की पूरी हैंड-होल्डिंग, ट्रेनिंग व डिजिटल अवेयरनेस"
+                  data-en="1 full month of hand-holding, training &amp; digital awareness">1 महीने की पूरी
+                  हैंड-होल्डिंग, ट्रेनिंग व डिजिटल अवेयरनेस</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="1 महीने की पूरी हैंड-होल्डिंग, ट्रेनिंग व डिजिटल अवेयरनेस" data-en="1 month full hand-holding, training & digital awareness">1 महीने की पूरी हैंड-होल्डिंग, ट्रेनिंग व डिजिटल अवेयरनेस</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="साल भर अनलिमिटेड वॉयस-बेस्ड ऑटो अपडेट्स"
+                  data-en="Year-round unlimited voice-based automated updates">साल भर अनलिमिटेड वॉयस-बेस्ड ऑटो
+                  अपडेट्स</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="हर महीने WhatsApp पर सरल परफॉर्मेंस रिपोर्ट (खोज व कॉल्स का हिसाब)" data-en="Monthly simplified performance report delivered on WhatsApp (search & call metrics)">हर महीने WhatsApp पर सरल परफॉर्मेंस रिपोर्ट (खोज व कॉल्स का हिसाब)</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="अगले 11 महीनों के लिए 30 मैनुअल अपडेट्स का कोटा"
+                  data-en="Quota of 30 manual updates over the next 11 months">अगले 11 महीनों के लिए 30 मैनुअल अपडेट्स
+                  का कोटा</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="अगले 11 महीनों के लिए 30 मैनुअल अपडेट्स का कोटा" data-en="30 manual update requests quota for remaining 11 months">अगले 11 महीनों के लिए 30 मैनुअल अपडेट्स का कोटा</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="हर हफ्ते WhatsApp पर सरल परफॉर्मेंस रिपोर्ट"
+                  data-en="Simple weekly performance summaries directly on WhatsApp">हर हफ्ते WhatsApp पर सरल परफॉर्मेंस
+                  रिपोर्ट</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="साल भर अनलिमिटेड वॉयस-बेस्ड ऑटो अपडेट्स" data-en="Unlimited voice-based automated updates year-round">साल भर अनलिमिटेड वॉयस-बेस्ड ऑटो अपडेट्स</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="आने वाले Local X शहर-स्तरीय सर्च नेटवर्क में सीधी एंट्री"
+                  data-en="Direct priority entry into the upcoming Local X city search network">आने वाले Local X
+                  शहर-स्तरीय सर्च नेटवर्क में सीधी एंट्री</span>
               </li>
             </ul>
 
-            <!-- Required Domain Note -->
-            <div class="pricing-domain-note" data-hi="*जरूरी नोट: 1 साल का आधिकारिक ऑनलाइन पता (डोमेन ~₹999) अलग से लेना होगा, जो हमारे जरिए ही बुक किया जाएगा। (शुरुआती कुल खर्च लगभग ₹2,000)*" data-en="*Important Note: 1-year official domain (~₹999) must be booked separately through us. (Initial Year-1 total cost approx ₹2,000)*">
-              *जरूरी नोट: 1 साल का आधिकारिक ऑनलाइन पता (डोमेन ~₹999) अलग से लेना होगा, जो हमारे जरिए ही बुक किया जाएगा। (शुरुआती कुल खर्च लगभग ₹2,000)*
-            </div>
+            <p class="domain-note"
+              data-hi="*नोट: वेबसाइट के लिए .com/.in address (domain) अलग से, हमारे ज़रिये लेना होगा जिसका खर्च ~₹१,०००/वर्ष आता है"
+              data-en="*Note: .com/.in address (domain) is purchased separately through us, costing ~₹1,000/year">
+              *नोट: वेबसाइट के लिए .com/.in address (domain) अलग से, हमारे ज़रिये लेना होगा जिसका खर्च ~₹१,०००/वर्ष आता है
+            </p>
 
-            <a href="https://wa.me/911234567890" class="btn-whatsapp-pill" target="_blank" rel="noopener noreferrer" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.88 2.791.88 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.748 0-3.385-.453-4.814-1.242l-5.217 1.367 1.393-5.086c-.895-1.488-1.408-3.23-1.408-5.097 0-5.484 4.485-9.969 9.969-9.969 5.485 0 9.969 4.485 9.969 9.969z"/>
-              </svg>
-              <span class="btn-label">व्हाट्सएप पर जुड़ें</span>
+            <a class="wa-button wa-button--compact" href="https://wa.me/918521567359" target="_blank"
+              rel="noopener noreferrer">
+              <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर
+                जुड़ें</span>
             </a>
-          </div>
+          </article>
 
-          <!-- Card 2: Plus Plan (DO NOT include the domain disclaimer note on this card) -->
-          <div class="pricing-clay-card featured-card">
-            <div class="featured-top-pill" data-hi="पॉपुलर" data-en="Popular">पॉपुलर</div>
-            <h3 class="pricing-tier-h3">Plus</h3>
-
-            <div class="pricing-rate-row">
-              <span class="currency">₹</span>
-              <span class="rate-val">1,998</span>
-              <span class="rate-sub" data-hi="/साल" data-en="/year">/साल</span>
+          <!-- Card 2: Promotion -->
+          <article class="price-card price-card--featured">
+            <span class="popular-badge" data-hi="पॉपुलर" data-en="Popular">पॉपुलर</span>
+            <h3 data-hi="Promotion" data-en="Promotion">Promotion</h3>
+            <div class="rate">
+              <span>₹</span>
+              <strong>1,998</strong>
+              <small data-hi="/साल" data-en="/year">/साल</small>
             </div>
 
-            <ul class="pricing-check-list">
-              <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="Standard प्लान की हर एक सुविधा शामिल" data-en="Every single feature of Standard plan included">Standard प्लान की हर एक सुविधा शामिल</span>
+            <ul class="feature-list">
+              <li class="feature-list__strong">
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="Standard प्लान की हर एक सुविधा शामिल"
+                  data-en="Everything in Standard Plan included">Standard प्लान की हर एक सुविधा शामिल</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="साल भर में 50 प्रमोशनल पोस्ट्स (40 फोटो बैनर + 10 शॉर्ट वीडियो)" data-en="50 promotional posts / year (40 graphic banners + 10 short videos)">साल भर में 50 प्रमोशनल पोस्ट्स (40 फोटो बैनर + 10 शॉर्ट वीडियो)</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="साल भर में 50 प्रमोशनल पोस्ट्स (40 फोटो बैनर + 10 शॉर्ट वीडियो)"
+                  data-en="50 promotional posts throughout the year (40 graphics + 10 short videos)">साल भर में 50
+                  प्रमोशनल पोस्ट्स (40 फोटो बैनर + 10 शॉर्ट वीडियो)</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="त्योहारों और खास दिनों के लिए पूरी ब्रांडिंग" data-en="Custom branding for festivals & special sales">त्योहारों और खास दिनों के लिए पूरी ब्रांडिंग</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="त्योहारों और खास दिनों के लिए पूरी ब्रांडिंग"
+                  data-en="Full festival and occasion-based branding campaigns">त्योहारों और खास दिनों के लिए पूरी
+                  ब्रांडिंग</span>
               </li>
               <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="हम खुद डिजाइन करेंगे और आपके सोशल हैंडल्स पर पोस्ट करेंगे" data-en="Designed, edited & posted directly by our team to your channels">हम खुद डिजाइन करेंगे और आपके सोशल हैंडल्स पर पोस्ट करेंगे</span>
-              </li>
-              <li>
-                <svg class="check-svg-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span data-hi="विस्तृत मंथली रिपोर्ट + सोशल मीडिया पोस्ट्स का रीच एनालिसिस" data-en="Detailed monthly performance & social post reach analytics">विस्तृत मंथली रिपोर्ट + सोशल मीडिया पोस्ट्स का रीच एनालिसिस</span>
+                <img src="assets/5e907.svg" alt="" width="18" height="18">
+                <span data-hi="हम खुद डिजाइन करेंगे और आपके सोशल हैंडल्स पर पोस्ट करेंगे"
+                  data-en="We design and publish directly onto your social channels">हम खुद डिजाइन करेंगे और आपके सोशल
+                  हैंडल्स पर पोस्ट करेंगे</span>
               </li>
             </ul>
 
-            <a href="https://wa.me/911234567890" class="btn-whatsapp-pill" target="_blank" rel="noopener noreferrer" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.88 2.791.88 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.748 0-3.385-.453-4.814-1.242l-5.217 1.367 1.393-5.086c-.895-1.488-1.408-3.23-1.408-5.097 0-5.484 4.485-9.969 9.969-9.969 5.485 0 9.969 4.485 9.969 9.969z"/>
-              </svg>
-              <span class="btn-label">व्हाट्सएप पर जुड़ें</span>
+            <a class="wa-button wa-button--compact" href="https://wa.me/918521567359" target="_blank"
+              rel="noopener noreferrer">
+              <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर
+                जुड़ें</span>
             </a>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SECTION 8: BOTTOM CTA BANNER ==================== -->
-    <section class="section pre-footer-banner-section">
-      <div class="container">
-        <div class="tall-clay-banner">
-          <h2 class="tall-banner-h2" data-hi="ऑफलाइन कारोबार चल रहा है बढ़िया? अब ऑनलाइन भी बढ़िए!" data-en="Offline retail running well? Take the next leap online!">
-            ऑफलाइन कारोबार चल रहा है बढ़िया? अब ऑनलाइन भी बढ़िए!
-          </h2>
-          <a href="https://wa.me/911234567890" class="btn-whatsapp-pill" target="_blank" rel="noopener noreferrer" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.586 1.761.88 2.791.88 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.748 0-3.385-.453-4.814-1.242l-5.217 1.367 1.393-5.086c-.895-1.488-1.408-3.23-1.408-5.097 0-5.484 4.485-9.969 9.969-9.969 5.485 0 9.969 4.485 9.969 9.969z"/>
-            </svg>
-            <span class="btn-label">व्हाट्सएप पर जुड़ें</span>
-          </a>
-        </div>
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section class="faq-section shell" id="faq" aria-labelledby="faqHeading">
+      <div class="faq-header">
+        <h2 id="faqHeading" data-hi="कोई सवाल? यहाँ हैं आपके जवाब" data-en="Got Questions? We Have Answers">कोई सवाल? यहाँ हैं आपके जवाब</h2>
+        <p class="section-subtitle faq-subtitle"
+          data-hi="सब कुछ पारदर्शी और आसान है । लेकिन फिर भी प्रश्न हो तो <a href='https://wa.me/918521567359' target='_blank' rel='noopener noreferrer'>हमें व्हाट्सप्प पर संपर्क करें</a>"
+          data-en="Everything is transparent and simple. But if you still have questions, <a href='https://wa.me/918521567359' target='_blank' rel='noopener noreferrer'>contact us on WhatsApp</a>">
+          सब कुछ पारदर्शी और आसान है । लेकिन फिर भी प्रश्न हो तो <a href="https://wa.me/918521567359" target="_blank" rel="noopener noreferrer">हमें व्हाट्सप्प पर संपर्क करें</a>
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <!-- Q1 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-q-text" data-hi="1. शुरू करने में कितना खर्च आएगा?" data-en="1. How much does it cost to get started?">1. शुरू करने में कितना खर्च आएगा?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p data-hi="सिर्फ़ ₹999/साल + लागू GST। .com/.in address (domain) का खर्च अलग से लगभग ₹800–₹1,000 होगा, जो नाम की उपलब्धता पर निर्भर करेगा। हम आपको विकल्प दिखाने से लेकर .com/.in address (domain) खरीदने तक पूरी मदद करेंगे।" data-en="Just ₹999/year + applicable GST. The .com/.in address (domain) is separate and typically costs ~₹800–₹1,000 depending on name availability. We assist you through every step—from selecting options to purchasing your .com/.in address (domain).">सिर्फ़ ₹999/साल + लागू GST। .com/.in address (domain) का खर्च अलग से लगभग ₹800–₹1,000 होगा, जो नाम की उपलब्धता पर निर्भर करेगा। हम आपको विकल्प दिखाने से लेकर .com/.in address (domain) खरीदने तक पूरी मदद करेंगे।</p>
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-q-text" data-hi="2. शुरू करने के लिए क्या-क्या देना होगा?" data-en="2. What details and assets do I need to provide?">2. शुरू करने के लिए क्या-क्या देना होगा?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p data-hi="बस मालिक का नाम, दुकान का नाम, लोकेशन, फोन नंबर, दुकान की कम-से-कम 2 फोटो (बाहर और अंदर), और बेचने वाले 2–5 मुख्य सामान के नाम व MRP। GST नंबर हो तो वह भी दें—मार्केटप्लेस अकाउंट के लिए ज़रूरत पड़ सकती है। पूरी इन्वेंट्री बाद में भी दे सकते हैं।" data-en="Just owner's name, shop name, location, phone number, at least 2 photos of your shop (exterior and interior), and 2–5 key products with their names and MRP. If you have a GST number, provide that too—it may be required for marketplace accounts. Your full inventory can be added anytime later.">बस मालिक का नाम, दुकान का नाम, लोकेशन, फोन नंबर, दुकान की कम-से-कम 2 फोटो (बाहर और अंदर), और बेचने वाले 2–5 मुख्य सामान के नाम व MRP। GST नंबर हो तो वह भी दें—मार्केटप्लेस अकाउंट के लिए ज़रूरत पड़ सकती है। पूरी इन्वेंट्री बाद में भी दे सकते हैं।</p>
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-q-text" data-hi="3. क्या मुझे कंप्यूटर या कोई नया ऐप सीखना पड़ेगा?" data-en="3. Do I need a computer or have to learn a complex new app?">3. क्या मुझे कंप्यूटर या कोई नया ऐप सीखना पड़ेगा?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p data-hi="बिल्कुल नहीं! WhatsApp पर जानकारी, फोटो या वॉइस नोट भेजिए। हम आपके फोन नंबर का इस्तेमाल करके अलग ईमेल ID भी बनाएँगे, जिससे ज़रूरी अकाउंट सेटअप करने में मदद मिलेगी।" data-en="Not at all! Simply send details, photos, or voice notes via WhatsApp. We will also set up a dedicated email ID using your phone number to assist with all necessary account configurations.">बिल्कुल नहीं! WhatsApp पर जानकारी, फोटो या वॉइस नोट भेजिए। हम आपके फोन नंबर का इस्तेमाल करके अलग ईमेल ID भी बनाएँगे, जिससे ज़रूरी अकाउंट सेटअप करने में मदद मिलेगी।</p>
+          </div>
+        </details>
+
+        <!-- Q4 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-q-text" data-hi="4. किन-किन प्लेटफ़ॉर्म पर मेरी दुकान ऑनलाइन होगी?" data-en="4. On which platforms will my store go online?">4. किन-किन प्लेटफ़ॉर्म पर मेरी दुकान ऑनलाइन होगी?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p data-hi="आपकी दुकान और पात्रता के अनुसार Google Business Profile, Amazon, IndiaMART, ONDC और Justdial जैसे एक या अधिक प्लेटफ़ॉर्म पर सेटअप में मदद मिलेगी। जहाँ संभव होगा, ज़रूरी नोटिफ़िकेशन WhatsApp पर पाने की व्यवस्था भी करेंगे।" data-en="Depending on your shop category and eligibility, we assist with setup on one or more platforms like Google Business Profile, Amazon, IndiaMART, ONDC, and Justdial. Wherever feasible, we configure order and enquiry notifications directly to your WhatsApp.">आपकी दुकान और पात्रता के अनुसार Google Business Profile, Amazon, IndiaMART, ONDC और Justdial जैसे एक या अधिक प्लेटफ़ॉर्म पर सेटअप में मदद मिलेगी। जहाँ संभव होगा, ज़रूरी नोटिफ़िकेशन WhatsApp पर पाने की व्यवस्था भी करेंगे।</p>
+          </div>
+        </details>
+
+        <!-- Q5 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-q-text" data-hi="5. क्या वेबसाइट बनने के बाद भी मदद मिलेगी?" data-en="5. Will I receive ongoing support after my website goes live?">5. क्या वेबसाइट बनने के बाद भी मदद मिलेगी?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p data-hi="बिल्कुल! पहले महीने सेटअप से इस्तेमाल तक पूरी मदद। उसके बाद भी प्लान के अनुसार सालभर सहायता और 30 तक मैनुअल अपडेट रिक्वेस्ट शामिल हैं।" data-en="Absolutely! Hands-on support during the first month from setup through daily usage. Even after that, you receive year-round assistance and up to 30 manual catalog/product update requests per year as per your plan.">बिल्कुल! पहले महीने सेटअप से इस्तेमाल तक पूरी मदद। उसके बाद भी प्लान के अनुसार सालभर सहायता और 30 तक मैनुअल अपडेट रिक्वेस्ट शामिल हैं।</p>
+          </div>
+        </details>
+
+        <!-- Q6 -->
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span class="faq-q-text" data-hi="6. क्या वेबसाइट और अकाउंट मेरे ही रहेंगे?" data-en="6. Will I retain full ownership of my website and accounts?">6. क्या वेबसाइट और अकाउंट मेरे ही रहेंगे?</span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </summary>
+          <div class="faq-answer">
+            <p data-hi="जी हाँ! .com/.in address (domain) और अकाउंट जहाँ संभव हो, आपके नाम और नियंत्रण में रहेंगे। हम सेटअप और देखभाल में मदद करेंगे, मालिकाना हक़ आपका रहेगा।" data-en="Yes, 100%! Wherever possible, your .com/.in address (domain) and accounts remain registered in your name and under your direct control. We assist with initial setup and ongoing maintenance, while complete ownership belongs to you.">जी हाँ! .com/.in address (domain) और अकाउंट जहाँ संभव हो, आपके नाम और नियंत्रण में रहेंगे। हम सेटअप और देखभाल में मदद करेंगे, मालिकाना हक़ आपका रहेगा।</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner-section">
+      <div class="cta-banner shell">
+        <h2 data-hi="ऑफलाइन कारोबार चल रहा है बढ़िया? तो क्यों ना ऑनलाइन भी बढ़िए!"
+          data-en="Offline business thriving? Let's take it online too!">
+          ऑफलाइन कारोबार चल रहा है बढ़िया? तो क्यों ना ऑनलाइन भी बढ़िए!
+        </h2>
+        <a class="wa-button" href="https://wa.me/918521567359" target="_blank" rel="noopener noreferrer">
+          <span class="btn-text" data-hi="व्हाट्सएप पर जुड़ें" data-en="Connect on WhatsApp">व्हाट्सएप पर जुड़ें</span>
+        </a>
       </div>
     </section>
   </main>
 
-  <!-- ==================== WARM-CREAM FOOTER ==================== -->
-  <footer class="clay-warm-footer">
-    <div class="container">
-      <div class="footer-split-row">
-        <div class="footer-left-bio" data-hi="<strong>PutOnline</strong> — बिना तकनीकी झंझट के स्थानीय दुकानदारों को सशक्त डिजिटल पहचान देने का अभियान।" data-en="<strong>PutOnline</strong> — Supporting local merchants with accessible digital identities without technical friction.">
-          <strong>PutOnline</strong> — बिना तकनीकी झंझट के स्थानीय दुकानदारों को सशक्त डिजिटल पहचान देने का अभियान।
-        </div>
-        <div class="footer-right-contact">
-          <span data-hi="संपर्क: " data-en="Contact: ">संपर्क: </span>
-          <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer">+91 12345 67890</a>
-          <span> | </span>
-          <a href="mailto:hello@putonline.in">hello@putonline.in</a>
-        </div>
+  <!-- ==================== GLOBAL FOOTER ==================== -->
+  <footer class="global-footer">
+    <div class="shell footer-grid">
+      <div>
+        <strong data-hi="ISellOnline" data-en="ISellOnline">ISellOnline</strong>
+        <p>
+          <a class="footer-about-link" href="/about" aria-label="हमारे बारे में जानें">
+            <span data-hi="बिना टेक्नोलॉजी के झंझट के स्थानीय दुकानदारों को<br>सशक्त डिजिटल पहचान देने का अभियान। और जानें..."
+              data-en="Empowering independent neighborhood merchants<br>with accessible digital identities without technical friction. Learn more...">
+              बिना टेक्नोलॉजी के झंझट के स्थानीय दुकानदारों को<br>सशक्त डिजिटल पहचान देने का अभियान। और जानें...
+            </span>
+            <span class="footer-about-arrow" aria-hidden="true">↗</span>
+          </a>
+        </p>
+      </div>
+      <div>
+        <strong data-hi="संपर्क" data-en="Contact">संपर्क</strong>
+        <p>
+          <a href="tel:+918521567359">+91-8521567359</a><br>
+          <a href="mailto:hello@isellonline.in">hello@isellonline.in</a>
+        </p>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
+
 </html>
