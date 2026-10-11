@@ -1802,3 +1802,71 @@ html[lang="en"] .nav-actions .wa-button--compact {
     justify-content: center;
   }
 }
+
+/* --- 18. 404 Page Sticky-Footer & Layout --- */
+body.page-404 {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+body.page-404 main {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.page-404 .error-404-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #dc2626;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+body.page-404 .page-404-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body.page-404 .page-404-actions .secondary-button,
+body.page-404 .page-404-actions .wa-button {
+  min-width: 200px;
+  height: 56px;
+  padding: 0 28px;
+  font-size: 17.28px;
+  font-weight: 700;
+  line-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body.page-404 .global-footer {
+  margin-top: auto;
+}
+
+@media (max-width: 480px) {
+  body.page-404 .page-404-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  body.page-404 .page-404-actions .secondary-button,
+  body.page-404 .page-404-actions .wa-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
